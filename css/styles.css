@@ -416,7 +416,6 @@ img {
 
 .footer-subscribe-wrap {
     margin-left: 80px;
-   
 }
 
 .footer-form {
@@ -424,7 +423,7 @@ img {
     gap: 24px;
 }
 
-.footer-email {
+.footer-form-input {
     background-color: transparent;
     outline: transparent;
     width: 264px;
