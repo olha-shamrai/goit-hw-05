@@ -396,51 +396,71 @@
     </footer>
 
     <div class="backdrop is-open" data-modal>
-        <div class="modal">
+        <f class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
             <svg class="modal-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
             </button>
+
             <p class="modal-text">Leave your contacts and we will call you back</p>
 
-            <div class="form-field">
-                <label class="form-label" for="input-name">Name</label>
-                <div class="input-wrapper">
-                    <input class="form-input" name="input-name" id="input-name" type="text" required />
-                    <svg class="form-icon" width="18" height="24">
-                      <use href="./images/icons.svg#icon-person"></use>
-                    </svg>
+            <form class="form-field" action="#" method="post">
+                <div class="form-wrapper">
+                    <label class="form-label" for="user-name">Name</label>
+                    <div class="input-wrapper">
+                        <input class="form-input" name="user-name" id="user-name" type="text" required />
+                        <svg class="form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
                 </div>
-            </div>
+            </form>
 
-            <div class="form-field">
-                <label class="form-label" for="input-phone">Phone</label>
+            <form class="form-field" action="#" method="post">
+                <div class="form-wrapper">
+                <label class="form-label" for="user-phone">Phone</label>
                 <div class="input-wrapper">
-                    <input class="form-input" name="input-phone" id="input-phone" type="tel" required />
+                    <input class="form-input" name="user-phone" id="user-phone" type="tel" required />
                     <svg class="form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                 </div>
-            </div>
+                </div>
+            </form>
 
-            <div class="form-field">
-                <label class="form-label" for="input-email">Email</label>
+            <form class="form-field" action="#" method="post">
+                <div class="form-wrapper">
+                <label class="form-label" for="user-email">Email</label>
                 <div class="input-wrapper">
-                    <input class="form-input" name="input-email" id="input-email" type="email" required />
+                    <input class="form-input" name="user-email" id="user-email" type="email" required />
                     <svg class="form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                 </div>
-            </div>
+                </div>
+            </form>
 
-            <div class="form-field">
-                <label class="form-label" for="input-comment">Comment</label>
-                <div class="input-wrapper">
-                    <textarea class="form-input" name="input-comment" id="input-comment"
+            <form class="form-field" action="#" method="post">
+                <div class="form-wrapper">
+                <label class="form-label" for="user-comment">Comment</label>
+                    <textarea class="form-input textarea" name="user-comment" id="user-comment"
                     placeholder="Text input" rows="5">
                     </textarea>
                 </div>
+            </form>
+
+            <div class="checkbox-wrapper">
+                <input class="checkbox visually-hidden" name="user-privacy" id="user-privacy" type="checkbox" value="true">
+                <label class="checkbox-label" for="user-privacy">
+                    <span class="checkbox-span">
+                        <svg class="check-icon" width="10" height="8">
+                          <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the
+                    <a class="privacy-policy" href="">Privacy Policy</a>
+                </label>
             </div>
 
             <button class="hero-button" type="submit">Send</button>
